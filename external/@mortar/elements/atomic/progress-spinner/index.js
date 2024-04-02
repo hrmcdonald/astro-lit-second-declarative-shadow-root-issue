@@ -2,8 +2,8 @@ import {
   MteProgressSpinner,
   MteSpinner,
   SPINNER_BASE_SIZE
-} from "../../chunks/chunk.5AAXKTSO.js";
-import "../../chunks/chunk.Y4EV6E5D.js";
+} from "../../chunks/chunk.Q54LTJXP.js";
+import "../../chunks/chunk.KVXAK6W4.js";
 export {
   MteProgressSpinner,
   MteSpinner,

@@ -15,8 +15,6 @@
     "postinstall": "TID=G-Y6ZLNP4HZ9 ./bin/telemetry || exit 0"
   },
   "dependencies": {
-    "@mortar/icons": "17.0.4",
-    "@mortar/styles": "17.0.4",
     "@floating-ui/dom": "~1.6.3",
     "@lit-labs/context": "~0.5.1",
     "@lit-labs/observers": "~2.0.2",
@@ -68,16 +66,6 @@
         "default": "./bespoke/partner-badge/index.cjs"
       }
     },
-    "./atomic/aside": {
-      "import": {
-        "types": "./atomic/aside/index.d.ts",
-        "default": "./atomic/aside/index.js"
-      },
-      "require": {
-        "types": "./atomic/aside/index.d.ts",
-        "default": "./atomic/aside/index.cjs"
-      }
-    },
     "./atomic/alert": {
       "import": {
         "types": "./atomic/alert/index.d.ts",
@@ -86,6 +74,16 @@
       "require": {
         "types": "./atomic/alert/index.d.ts",
         "default": "./atomic/alert/index.cjs"
+      }
+    },
+    "./atomic/aside": {
+      "import": {
+        "types": "./atomic/aside/index.d.ts",
+        "default": "./atomic/aside/index.js"
+      },
+      "require": {
+        "types": "./atomic/aside/index.d.ts",
+        "default": "./atomic/aside/index.cjs"
       }
     },
     "./atomic/avatar": {
@@ -128,16 +126,6 @@
         "default": "./atomic/breadcrumbs/index.cjs"
       }
     },
-    "./atomic/button-group": {
-      "import": {
-        "types": "./atomic/button-group/index.d.ts",
-        "default": "./atomic/button-group/index.js"
-      },
-      "require": {
-        "types": "./atomic/button-group/index.d.ts",
-        "default": "./atomic/button-group/index.cjs"
-      }
-    },
     "./atomic/button": {
       "import": {
         "types": "./atomic/button/index.d.ts",
@@ -146,6 +134,16 @@
       "require": {
         "types": "./atomic/button/index.d.ts",
         "default": "./atomic/button/index.cjs"
+      }
+    },
+    "./atomic/button-group": {
+      "import": {
+        "types": "./atomic/button-group/index.d.ts",
+        "default": "./atomic/button-group/index.js"
+      },
+      "require": {
+        "types": "./atomic/button-group/index.d.ts",
+        "default": "./atomic/button-group/index.cjs"
       }
     },
     "./atomic/card": {
@@ -208,16 +206,6 @@
         "default": "./atomic/composition/index.cjs"
       }
     },
-    "./atomic/drawer": {
-      "import": {
-        "types": "./atomic/drawer/index.d.ts",
-        "default": "./atomic/drawer/index.js"
-      },
-      "require": {
-        "types": "./atomic/drawer/index.d.ts",
-        "default": "./atomic/drawer/index.cjs"
-      }
-    },
     "./atomic/divider": {
       "import": {
         "types": "./atomic/divider/index.d.ts",
@@ -226,6 +214,16 @@
       "require": {
         "types": "./atomic/divider/index.d.ts",
         "default": "./atomic/divider/index.cjs"
+      }
+    },
+    "./atomic/drawer": {
+      "import": {
+        "types": "./atomic/drawer/index.d.ts",
+        "default": "./atomic/drawer/index.js"
+      },
+      "require": {
+        "types": "./atomic/drawer/index.d.ts",
+        "default": "./atomic/drawer/index.cjs"
       }
     },
     "./atomic/expansion-panel": {
@@ -258,16 +256,6 @@
         "default": "./atomic/file-upload/index.cjs"
       }
     },
-    "./atomic/grid": {
-      "import": {
-        "types": "./atomic/grid/index.d.ts",
-        "default": "./atomic/grid/index.js"
-      },
-      "require": {
-        "types": "./atomic/grid/index.d.ts",
-        "default": "./atomic/grid/index.cjs"
-      }
-    },
     "./atomic/form-elements": {
       "import": {
         "types": "./atomic/form-elements/index.d.ts",
@@ -276,16 +264,6 @@
       "require": {
         "types": "./atomic/form-elements/index.d.ts",
         "default": "./atomic/form-elements/index.cjs"
-      }
-    },
-    "./atomic/image": {
-      "import": {
-        "types": "./atomic/image/index.d.ts",
-        "default": "./atomic/image/index.js"
-      },
-      "require": {
-        "types": "./atomic/image/index.d.ts",
-        "default": "./atomic/image/index.cjs"
       }
     },
     "./atomic/icon": {
@@ -298,14 +276,24 @@
         "default": "./atomic/icon/index.cjs"
       }
     },
-    "./atomic/link": {
+    "./atomic/grid": {
       "import": {
-        "types": "./atomic/link/index.d.ts",
-        "default": "./atomic/link/index.js"
+        "types": "./atomic/grid/index.d.ts",
+        "default": "./atomic/grid/index.js"
       },
       "require": {
-        "types": "./atomic/link/index.d.ts",
-        "default": "./atomic/link/index.cjs"
+        "types": "./atomic/grid/index.d.ts",
+        "default": "./atomic/grid/index.cjs"
+      }
+    },
+    "./atomic/image": {
+      "import": {
+        "types": "./atomic/image/index.d.ts",
+        "default": "./atomic/image/index.js"
+      },
+      "require": {
+        "types": "./atomic/image/index.d.ts",
+        "default": "./atomic/image/index.cjs"
       }
     },
     "./atomic/input": {
@@ -316,6 +304,16 @@
       "require": {
         "types": "./atomic/input/index.d.ts",
         "default": "./atomic/input/index.cjs"
+      }
+    },
+    "./atomic/link": {
+      "import": {
+        "types": "./atomic/link/index.d.ts",
+        "default": "./atomic/link/index.js"
+      },
+      "require": {
+        "types": "./atomic/link/index.d.ts",
+        "default": "./atomic/link/index.cjs"
       }
     },
     "./atomic/menu": {
@@ -618,16 +616,6 @@
         "default": "./utilities/format-date/index.cjs"
       }
     },
-    "./utilities/format-number": {
-      "import": {
-        "types": "./utilities/format-number/index.d.ts",
-        "default": "./utilities/format-number/index.js"
-      },
-      "require": {
-        "types": "./utilities/format-number/index.d.ts",
-        "default": "./utilities/format-number/index.cjs"
-      }
-    },
     "./utilities/media-query": {
       "import": {
         "types": "./utilities/media-query/index.d.ts",
@@ -666,6 +654,16 @@
       "require": {
         "types": "./utilities/visually-hidden/index.d.ts",
         "default": "./utilities/visually-hidden/index.cjs"
+      }
+    },
+    "./utilities/format-number": {
+      "import": {
+        "types": "./utilities/format-number/index.d.ts",
+        "default": "./utilities/format-number/index.js"
+      },
+      "require": {
+        "types": "./utilities/format-number/index.d.ts",
+        "default": "./utilities/format-number/index.cjs"
       }
     }
   }

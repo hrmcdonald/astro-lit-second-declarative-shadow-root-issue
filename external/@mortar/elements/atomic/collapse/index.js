@@ -1,7 +1,7 @@
 import {
   MteCollapse
-} from "../../chunks/chunk.YCYD3ABU.js";
-import "../../chunks/chunk.Y4EV6E5D.js";
+} from "../../chunks/chunk.EEB6DSBT.js";
+import "../../chunks/chunk.KVXAK6W4.js";
 export {
   MteCollapse
 };

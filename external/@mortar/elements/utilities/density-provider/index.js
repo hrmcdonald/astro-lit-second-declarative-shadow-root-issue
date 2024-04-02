@@ -4,7 +4,7 @@ import {
   defineElement,
   isSsr,
   onUpdate
-} from "../../chunks/chunk.Y4EV6E5D.js";
+} from "../../chunks/chunk.KVXAK6W4.js";
 
 // src/utilities/density-provider/density-provider.element.ts
 import { property } from "lit/decorators.js";

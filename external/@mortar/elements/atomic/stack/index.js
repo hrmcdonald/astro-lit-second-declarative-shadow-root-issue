@@ -5,7 +5,7 @@ import {
   __decorateClass,
   defineElement,
   styles7 as styles
-} from "../../chunks/chunk.Y4EV6E5D.js";
+} from "../../chunks/chunk.KVXAK6W4.js";
 
 // src/atomic/stack/stack.element.ts
 import { html } from "lit";

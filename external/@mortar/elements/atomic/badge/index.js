@@ -1,7 +1,7 @@
 import {
   MteBadge
-} from "../../chunks/chunk.PACEABGF.js";
-import "../../chunks/chunk.Y4EV6E5D.js";
+} from "../../chunks/chunk.FKFQU3NJ.js";
+import "../../chunks/chunk.KVXAK6W4.js";
 export {
   MteBadge
 };

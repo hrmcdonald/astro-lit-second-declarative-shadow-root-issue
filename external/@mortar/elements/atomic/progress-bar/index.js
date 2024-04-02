@@ -7,7 +7,7 @@ import {
   defineElement,
   onUpdate,
   styles7 as styles
-} from "../../chunks/chunk.Y4EV6E5D.js";
+} from "../../chunks/chunk.KVXAK6W4.js";
 
 // src/atomic/progress-bar/progress-bar.element.ts
 import { styleMap } from "lit/directives/style-map.js";

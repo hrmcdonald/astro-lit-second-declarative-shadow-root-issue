@@ -3,8 +3,8 @@ import {
   MteIcon,
   MteIconRegistryService,
   _MteIconRegistryService
-} from "../../chunks/chunk.L7F3KXB6.js";
-import "../../chunks/chunk.Y4EV6E5D.js";
+} from "../../chunks/chunk.M5RJHYFW.js";
+import "../../chunks/chunk.KVXAK6W4.js";
 export {
   MteIcon,
   MteIconRegistryService,

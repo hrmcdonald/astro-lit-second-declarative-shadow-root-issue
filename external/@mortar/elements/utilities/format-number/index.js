@@ -5,7 +5,7 @@ import {
   __decorateClass,
   defineElement,
   styles7 as styles
-} from "../../chunks/chunk.Y4EV6E5D.js";
+} from "../../chunks/chunk.KVXAK6W4.js";
 
 // src/utilities/format-number/format-number.element.ts
 import { html } from "lit";

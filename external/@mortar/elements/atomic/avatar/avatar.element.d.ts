@@ -1,4 +1,4 @@
-import { MteElement, MteElementParts } from '../../core';
+import { MteElement, MteElementParts, ResponsiveValue } from '../../core';
 import '../../utilities/overlay-trigger';
 import '../tooltip';
 import '../icon';
@@ -27,9 +27,9 @@ export declare class MteAvatar extends MteAvatar_base {
     /** Sets the size of the avatar. Width and height will have the same value */
     size?: SizeOptions | number | string;
     /** Customize the background color of the avatar when no image is rendered */
-    bg?: string | undefined;
+    bg?: ResponsiveValue<string | undefined>;
     /** Customize the font color of the avatar when no image is rendered */
-    c?: string;
+    c?: ResponsiveValue<string | undefined>;
     /** Displays avatar without elevation. */
     withoutElevation?: boolean;
     /** Displays avatar with a border. */
@@ -41,6 +41,8 @@ export declare class MteAvatar extends MteAvatar_base {
         color: string;
         contrast: string;
     };
+    image: HTMLImageElement;
+    fallback: HTMLDivElement;
     tooltipElement: MteTooltip;
     overlayTriggerElement: MteOverlayTrigger;
     showFallback: boolean;
@@ -50,13 +52,11 @@ export declare class MteAvatar extends MteAvatar_base {
         contrast: string;
     };
     connectedCallback(): void;
+    firstUpdated(changedProps: any): void;
     updated(changedProperties: Map<string, any>): void;
-    private handleSrcUpdate;
-    handleFallback(): void;
+    disconnectedCallback(): void;
     protected updateInstanceStyles(changedProps: any): void;
-    private loadImage;
     handleImageLoad(): void;
-    handleImageError(): void;
     getInitials(name: any): any;
     getAvatarPalette(name: any): {
         color: string;

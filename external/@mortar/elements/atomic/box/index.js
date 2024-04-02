@@ -4,7 +4,7 @@ import {
   css,
   defineElement,
   styles7 as styles
-} from "../../chunks/chunk.Y4EV6E5D.js";
+} from "../../chunks/chunk.KVXAK6W4.js";
 
 // src/atomic/box/box.element.ts
 import { html } from "lit";

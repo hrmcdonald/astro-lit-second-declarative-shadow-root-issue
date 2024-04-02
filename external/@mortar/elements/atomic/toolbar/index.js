@@ -8,7 +8,7 @@ import {
   defineElement,
   styles,
   styles7 as styles2
-} from "../../chunks/chunk.Y4EV6E5D.js";
+} from "../../chunks/chunk.KVXAK6W4.js";
 
 // src/atomic/toolbar/toolbar.element.ts
 import { html } from "lit";
