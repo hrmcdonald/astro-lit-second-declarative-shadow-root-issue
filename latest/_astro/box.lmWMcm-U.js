@@ -1,1 +1,0 @@
-import{a as e,z as t,_ as a,M as o,d as r}from"./chunk.BDXXLFJI.Wz8REFjk.js";import{x as l}from"./directive.qvJfFQ74.js";var s=class extends o{render(){return l`${this.instanceStyles}<slot></slot>`}};s.styles=[e,t` :host { display: block; } `];s=a([r("mte-box")],s);export{s as MteBox};

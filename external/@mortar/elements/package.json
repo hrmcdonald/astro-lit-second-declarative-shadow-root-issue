@@ -1,0 +1,672 @@
+{
+  "name": "@mortar/elements",
+  "version": "17.0.4",
+  "type": "module",
+  "customElements": "./custom-elements.json",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/heb-engineering/teams/enterprise/sco/mortar/mortar"
+  },
+  "publishConfig": {
+    "registry": "https://hebdigital.jfrog.io/hebdigital/api/npm/npm/"
+  },
+  "scripts": {
+    "postinstall": "TID=G-Y6ZLNP4HZ9 ./bin/telemetry || exit 0"
+  },
+  "dependencies": {
+    "@mortar/icons": "17.0.4",
+    "@mortar/styles": "17.0.4",
+    "@floating-ui/dom": "~1.6.3",
+    "@lit-labs/context": "~0.5.1",
+    "@lit-labs/observers": "~2.0.2",
+    "@lit/reactive-element": "~2.0.4",
+    "@open-wc/lit-helpers": "~0.7.0",
+    "@open-wc/form-control": "~1.0.0",
+    "@open-wc/form-helpers": "~1.0.0",
+    "lit-element": "~4.0.4",
+    "lit-html": "~3.1.2",
+    "lit": "~3.1.2",
+    "animejs": "^3.2.2",
+    "element-internals-polyfill": "^1.3.10"
+  },
+  "peerDependencies": {
+    "tslib": ">= 2.0.0"
+  },
+  "exports": {
+    "./custom-elements.json": {
+      "import": "./custom-elements.json",
+      "require": "./custom-elements.json"
+    },
+    "./core": {
+      "import": {
+        "types": "./core/index.d.ts",
+        "default": "./core/index.js"
+      },
+      "require": {
+        "types": "./core/index.d.ts",
+        "default": "./core/index.cjs"
+      }
+    },
+    "./bespoke/heb": {
+      "import": {
+        "types": "./bespoke/heb/index.d.ts",
+        "default": "./bespoke/heb/index.js"
+      },
+      "require": {
+        "types": "./bespoke/heb/index.d.ts",
+        "default": "./bespoke/heb/index.cjs"
+      }
+    },
+    "./bespoke/partner-badge": {
+      "import": {
+        "types": "./bespoke/partner-badge/index.d.ts",
+        "default": "./bespoke/partner-badge/index.js"
+      },
+      "require": {
+        "types": "./bespoke/partner-badge/index.d.ts",
+        "default": "./bespoke/partner-badge/index.cjs"
+      }
+    },
+    "./atomic/aside": {
+      "import": {
+        "types": "./atomic/aside/index.d.ts",
+        "default": "./atomic/aside/index.js"
+      },
+      "require": {
+        "types": "./atomic/aside/index.d.ts",
+        "default": "./atomic/aside/index.cjs"
+      }
+    },
+    "./atomic/alert": {
+      "import": {
+        "types": "./atomic/alert/index.d.ts",
+        "default": "./atomic/alert/index.js"
+      },
+      "require": {
+        "types": "./atomic/alert/index.d.ts",
+        "default": "./atomic/alert/index.cjs"
+      }
+    },
+    "./atomic/avatar": {
+      "import": {
+        "types": "./atomic/avatar/index.d.ts",
+        "default": "./atomic/avatar/index.js"
+      },
+      "require": {
+        "types": "./atomic/avatar/index.d.ts",
+        "default": "./atomic/avatar/index.cjs"
+      }
+    },
+    "./atomic/badge": {
+      "import": {
+        "types": "./atomic/badge/index.d.ts",
+        "default": "./atomic/badge/index.js"
+      },
+      "require": {
+        "types": "./atomic/badge/index.d.ts",
+        "default": "./atomic/badge/index.cjs"
+      }
+    },
+    "./atomic/box": {
+      "import": {
+        "types": "./atomic/box/index.d.ts",
+        "default": "./atomic/box/index.js"
+      },
+      "require": {
+        "types": "./atomic/box/index.d.ts",
+        "default": "./atomic/box/index.cjs"
+      }
+    },
+    "./atomic/breadcrumbs": {
+      "import": {
+        "types": "./atomic/breadcrumbs/index.d.ts",
+        "default": "./atomic/breadcrumbs/index.js"
+      },
+      "require": {
+        "types": "./atomic/breadcrumbs/index.d.ts",
+        "default": "./atomic/breadcrumbs/index.cjs"
+      }
+    },
+    "./atomic/button-group": {
+      "import": {
+        "types": "./atomic/button-group/index.d.ts",
+        "default": "./atomic/button-group/index.js"
+      },
+      "require": {
+        "types": "./atomic/button-group/index.d.ts",
+        "default": "./atomic/button-group/index.cjs"
+      }
+    },
+    "./atomic/button": {
+      "import": {
+        "types": "./atomic/button/index.d.ts",
+        "default": "./atomic/button/index.js"
+      },
+      "require": {
+        "types": "./atomic/button/index.d.ts",
+        "default": "./atomic/button/index.cjs"
+      }
+    },
+    "./atomic/card": {
+      "import": {
+        "types": "./atomic/card/index.d.ts",
+        "default": "./atomic/card/index.js"
+      },
+      "require": {
+        "types": "./atomic/card/index.d.ts",
+        "default": "./atomic/card/index.cjs"
+      }
+    },
+    "./atomic/center": {
+      "import": {
+        "types": "./atomic/center/index.d.ts",
+        "default": "./atomic/center/index.js"
+      },
+      "require": {
+        "types": "./atomic/center/index.d.ts",
+        "default": "./atomic/center/index.cjs"
+      }
+    },
+    "./atomic/checkbox": {
+      "import": {
+        "types": "./atomic/checkbox/index.d.ts",
+        "default": "./atomic/checkbox/index.js"
+      },
+      "require": {
+        "types": "./atomic/checkbox/index.d.ts",
+        "default": "./atomic/checkbox/index.cjs"
+      }
+    },
+    "./atomic/collapse": {
+      "import": {
+        "types": "./atomic/collapse/index.d.ts",
+        "default": "./atomic/collapse/index.js"
+      },
+      "require": {
+        "types": "./atomic/collapse/index.d.ts",
+        "default": "./atomic/collapse/index.cjs"
+      }
+    },
+    "./atomic/color-scheme": {
+      "import": {
+        "types": "./atomic/color-scheme/index.d.ts",
+        "default": "./atomic/color-scheme/index.js"
+      },
+      "require": {
+        "types": "./atomic/color-scheme/index.d.ts",
+        "default": "./atomic/color-scheme/index.cjs"
+      }
+    },
+    "./atomic/composition": {
+      "import": {
+        "types": "./atomic/composition/index.d.ts",
+        "default": "./atomic/composition/index.js"
+      },
+      "require": {
+        "types": "./atomic/composition/index.d.ts",
+        "default": "./atomic/composition/index.cjs"
+      }
+    },
+    "./atomic/drawer": {
+      "import": {
+        "types": "./atomic/drawer/index.d.ts",
+        "default": "./atomic/drawer/index.js"
+      },
+      "require": {
+        "types": "./atomic/drawer/index.d.ts",
+        "default": "./atomic/drawer/index.cjs"
+      }
+    },
+    "./atomic/divider": {
+      "import": {
+        "types": "./atomic/divider/index.d.ts",
+        "default": "./atomic/divider/index.js"
+      },
+      "require": {
+        "types": "./atomic/divider/index.d.ts",
+        "default": "./atomic/divider/index.cjs"
+      }
+    },
+    "./atomic/expansion-panel": {
+      "import": {
+        "types": "./atomic/expansion-panel/index.d.ts",
+        "default": "./atomic/expansion-panel/index.js"
+      },
+      "require": {
+        "types": "./atomic/expansion-panel/index.d.ts",
+        "default": "./atomic/expansion-panel/index.cjs"
+      }
+    },
+    "./atomic/fieldset": {
+      "import": {
+        "types": "./atomic/fieldset/index.d.ts",
+        "default": "./atomic/fieldset/index.js"
+      },
+      "require": {
+        "types": "./atomic/fieldset/index.d.ts",
+        "default": "./atomic/fieldset/index.cjs"
+      }
+    },
+    "./atomic/file-upload": {
+      "import": {
+        "types": "./atomic/file-upload/index.d.ts",
+        "default": "./atomic/file-upload/index.js"
+      },
+      "require": {
+        "types": "./atomic/file-upload/index.d.ts",
+        "default": "./atomic/file-upload/index.cjs"
+      }
+    },
+    "./atomic/grid": {
+      "import": {
+        "types": "./atomic/grid/index.d.ts",
+        "default": "./atomic/grid/index.js"
+      },
+      "require": {
+        "types": "./atomic/grid/index.d.ts",
+        "default": "./atomic/grid/index.cjs"
+      }
+    },
+    "./atomic/form-elements": {
+      "import": {
+        "types": "./atomic/form-elements/index.d.ts",
+        "default": "./atomic/form-elements/index.js"
+      },
+      "require": {
+        "types": "./atomic/form-elements/index.d.ts",
+        "default": "./atomic/form-elements/index.cjs"
+      }
+    },
+    "./atomic/image": {
+      "import": {
+        "types": "./atomic/image/index.d.ts",
+        "default": "./atomic/image/index.js"
+      },
+      "require": {
+        "types": "./atomic/image/index.d.ts",
+        "default": "./atomic/image/index.cjs"
+      }
+    },
+    "./atomic/icon": {
+      "import": {
+        "types": "./atomic/icon/index.d.ts",
+        "default": "./atomic/icon/index.js"
+      },
+      "require": {
+        "types": "./atomic/icon/index.d.ts",
+        "default": "./atomic/icon/index.cjs"
+      }
+    },
+    "./atomic/link": {
+      "import": {
+        "types": "./atomic/link/index.d.ts",
+        "default": "./atomic/link/index.js"
+      },
+      "require": {
+        "types": "./atomic/link/index.d.ts",
+        "default": "./atomic/link/index.cjs"
+      }
+    },
+    "./atomic/input": {
+      "import": {
+        "types": "./atomic/input/index.d.ts",
+        "default": "./atomic/input/index.js"
+      },
+      "require": {
+        "types": "./atomic/input/index.d.ts",
+        "default": "./atomic/input/index.cjs"
+      }
+    },
+    "./atomic/menu": {
+      "import": {
+        "types": "./atomic/menu/index.d.ts",
+        "default": "./atomic/menu/index.js"
+      },
+      "require": {
+        "types": "./atomic/menu/index.d.ts",
+        "default": "./atomic/menu/index.cjs"
+      }
+    },
+    "./atomic/metadata": {
+      "import": {
+        "types": "./atomic/metadata/index.d.ts",
+        "default": "./atomic/metadata/index.js"
+      },
+      "require": {
+        "types": "./atomic/metadata/index.d.ts",
+        "default": "./atomic/metadata/index.cjs"
+      }
+    },
+    "./atomic/modal": {
+      "import": {
+        "types": "./atomic/modal/index.d.ts",
+        "default": "./atomic/modal/index.js"
+      },
+      "require": {
+        "types": "./atomic/modal/index.d.ts",
+        "default": "./atomic/modal/index.cjs"
+      }
+    },
+    "./atomic/native-select": {
+      "import": {
+        "types": "./atomic/native-select/index.d.ts",
+        "default": "./atomic/native-select/index.js"
+      },
+      "require": {
+        "types": "./atomic/native-select/index.d.ts",
+        "default": "./atomic/native-select/index.cjs"
+      }
+    },
+    "./atomic/nav": {
+      "import": {
+        "types": "./atomic/nav/index.d.ts",
+        "default": "./atomic/nav/index.js"
+      },
+      "require": {
+        "types": "./atomic/nav/index.d.ts",
+        "default": "./atomic/nav/index.cjs"
+      }
+    },
+    "./atomic/popover": {
+      "import": {
+        "types": "./atomic/popover/index.d.ts",
+        "default": "./atomic/popover/index.js"
+      },
+      "require": {
+        "types": "./atomic/popover/index.d.ts",
+        "default": "./atomic/popover/index.cjs"
+      }
+    },
+    "./atomic/progress-bar": {
+      "import": {
+        "types": "./atomic/progress-bar/index.d.ts",
+        "default": "./atomic/progress-bar/index.js"
+      },
+      "require": {
+        "types": "./atomic/progress-bar/index.d.ts",
+        "default": "./atomic/progress-bar/index.cjs"
+      }
+    },
+    "./atomic/progress-spinner": {
+      "import": {
+        "types": "./atomic/progress-spinner/index.d.ts",
+        "default": "./atomic/progress-spinner/index.js"
+      },
+      "require": {
+        "types": "./atomic/progress-spinner/index.d.ts",
+        "default": "./atomic/progress-spinner/index.cjs"
+      }
+    },
+    "./atomic/radio": {
+      "import": {
+        "types": "./atomic/radio/index.d.ts",
+        "default": "./atomic/radio/index.js"
+      },
+      "require": {
+        "types": "./atomic/radio/index.d.ts",
+        "default": "./atomic/radio/index.cjs"
+      }
+    },
+    "./atomic/range-slider": {
+      "import": {
+        "types": "./atomic/range-slider/index.d.ts",
+        "default": "./atomic/range-slider/index.js"
+      },
+      "require": {
+        "types": "./atomic/range-slider/index.d.ts",
+        "default": "./atomic/range-slider/index.cjs"
+      }
+    },
+    "./atomic/segmented-control": {
+      "import": {
+        "types": "./atomic/segmented-control/index.d.ts",
+        "default": "./atomic/segmented-control/index.js"
+      },
+      "require": {
+        "types": "./atomic/segmented-control/index.d.ts",
+        "default": "./atomic/segmented-control/index.cjs"
+      }
+    },
+    "./atomic/skeleton": {
+      "import": {
+        "types": "./atomic/skeleton/index.d.ts",
+        "default": "./atomic/skeleton/index.js"
+      },
+      "require": {
+        "types": "./atomic/skeleton/index.d.ts",
+        "default": "./atomic/skeleton/index.cjs"
+      }
+    },
+    "./atomic/slider": {
+      "import": {
+        "types": "./atomic/slider/index.d.ts",
+        "default": "./atomic/slider/index.js"
+      },
+      "require": {
+        "types": "./atomic/slider/index.d.ts",
+        "default": "./atomic/slider/index.cjs"
+      }
+    },
+    "./atomic/smile": {
+      "import": {
+        "types": "./atomic/smile/index.d.ts",
+        "default": "./atomic/smile/index.js"
+      },
+      "require": {
+        "types": "./atomic/smile/index.d.ts",
+        "default": "./atomic/smile/index.cjs"
+      }
+    },
+    "./atomic/split-panel": {
+      "import": {
+        "types": "./atomic/split-panel/index.d.ts",
+        "default": "./atomic/split-panel/index.js"
+      },
+      "require": {
+        "types": "./atomic/split-panel/index.d.ts",
+        "default": "./atomic/split-panel/index.cjs"
+      }
+    },
+    "./atomic/stack": {
+      "import": {
+        "types": "./atomic/stack/index.d.ts",
+        "default": "./atomic/stack/index.js"
+      },
+      "require": {
+        "types": "./atomic/stack/index.d.ts",
+        "default": "./atomic/stack/index.cjs"
+      }
+    },
+    "./atomic/statistic": {
+      "import": {
+        "types": "./atomic/statistic/index.d.ts",
+        "default": "./atomic/statistic/index.js"
+      },
+      "require": {
+        "types": "./atomic/statistic/index.d.ts",
+        "default": "./atomic/statistic/index.cjs"
+      }
+    },
+    "./atomic/switch": {
+      "import": {
+        "types": "./atomic/switch/index.d.ts",
+        "default": "./atomic/switch/index.js"
+      },
+      "require": {
+        "types": "./atomic/switch/index.d.ts",
+        "default": "./atomic/switch/index.cjs"
+      }
+    },
+    "./atomic/tabs": {
+      "import": {
+        "types": "./atomic/tabs/index.d.ts",
+        "default": "./atomic/tabs/index.js"
+      },
+      "require": {
+        "types": "./atomic/tabs/index.d.ts",
+        "default": "./atomic/tabs/index.cjs"
+      }
+    },
+    "./atomic/tag": {
+      "import": {
+        "types": "./atomic/tag/index.d.ts",
+        "default": "./atomic/tag/index.js"
+      },
+      "require": {
+        "types": "./atomic/tag/index.d.ts",
+        "default": "./atomic/tag/index.cjs"
+      }
+    },
+    "./atomic/text": {
+      "import": {
+        "types": "./atomic/text/index.d.ts",
+        "default": "./atomic/text/index.js"
+      },
+      "require": {
+        "types": "./atomic/text/index.d.ts",
+        "default": "./atomic/text/index.cjs"
+      }
+    },
+    "./atomic/textarea": {
+      "import": {
+        "types": "./atomic/textarea/index.d.ts",
+        "default": "./atomic/textarea/index.js"
+      },
+      "require": {
+        "types": "./atomic/textarea/index.d.ts",
+        "default": "./atomic/textarea/index.cjs"
+      }
+    },
+    "./atomic/timeline": {
+      "import": {
+        "types": "./atomic/timeline/index.d.ts",
+        "default": "./atomic/timeline/index.js"
+      },
+      "require": {
+        "types": "./atomic/timeline/index.d.ts",
+        "default": "./atomic/timeline/index.cjs"
+      }
+    },
+    "./atomic/title": {
+      "import": {
+        "types": "./atomic/title/index.d.ts",
+        "default": "./atomic/title/index.js"
+      },
+      "require": {
+        "types": "./atomic/title/index.d.ts",
+        "default": "./atomic/title/index.cjs"
+      }
+    },
+    "./atomic/toast": {
+      "import": {
+        "types": "./atomic/toast/index.d.ts",
+        "default": "./atomic/toast/index.js"
+      },
+      "require": {
+        "types": "./atomic/toast/index.d.ts",
+        "default": "./atomic/toast/index.cjs"
+      }
+    },
+    "./atomic/toolbar": {
+      "import": {
+        "types": "./atomic/toolbar/index.d.ts",
+        "default": "./atomic/toolbar/index.js"
+      },
+      "require": {
+        "types": "./atomic/toolbar/index.d.ts",
+        "default": "./atomic/toolbar/index.cjs"
+      }
+    },
+    "./atomic/tooltip": {
+      "import": {
+        "types": "./atomic/tooltip/index.d.ts",
+        "default": "./atomic/tooltip/index.js"
+      },
+      "require": {
+        "types": "./atomic/tooltip/index.d.ts",
+        "default": "./atomic/tooltip/index.cjs"
+      }
+    },
+    "./atomic/tree": {
+      "import": {
+        "types": "./atomic/tree/index.d.ts",
+        "default": "./atomic/tree/index.js"
+      },
+      "require": {
+        "types": "./atomic/tree/index.d.ts",
+        "default": "./atomic/tree/index.cjs"
+      }
+    },
+    "./utilities/density-provider": {
+      "import": {
+        "types": "./utilities/density-provider/index.d.ts",
+        "default": "./utilities/density-provider/index.js"
+      },
+      "require": {
+        "types": "./utilities/density-provider/index.d.ts",
+        "default": "./utilities/density-provider/index.cjs"
+      }
+    },
+    "./utilities/format-date": {
+      "import": {
+        "types": "./utilities/format-date/index.d.ts",
+        "default": "./utilities/format-date/index.js"
+      },
+      "require": {
+        "types": "./utilities/format-date/index.d.ts",
+        "default": "./utilities/format-date/index.cjs"
+      }
+    },
+    "./utilities/format-number": {
+      "import": {
+        "types": "./utilities/format-number/index.d.ts",
+        "default": "./utilities/format-number/index.js"
+      },
+      "require": {
+        "types": "./utilities/format-number/index.d.ts",
+        "default": "./utilities/format-number/index.cjs"
+      }
+    },
+    "./utilities/media-query": {
+      "import": {
+        "types": "./utilities/media-query/index.d.ts",
+        "default": "./utilities/media-query/index.js"
+      },
+      "require": {
+        "types": "./utilities/media-query/index.d.ts",
+        "default": "./utilities/media-query/index.cjs"
+      }
+    },
+    "./utilities/overlay-trigger": {
+      "import": {
+        "types": "./utilities/overlay-trigger/index.d.ts",
+        "default": "./utilities/overlay-trigger/index.js"
+      },
+      "require": {
+        "types": "./utilities/overlay-trigger/index.d.ts",
+        "default": "./utilities/overlay-trigger/index.cjs"
+      }
+    },
+    "./utilities/preset-provider": {
+      "import": {
+        "types": "./utilities/preset-provider/index.d.ts",
+        "default": "./utilities/preset-provider/index.js"
+      },
+      "require": {
+        "types": "./utilities/preset-provider/index.d.ts",
+        "default": "./utilities/preset-provider/index.cjs"
+      }
+    },
+    "./utilities/visually-hidden": {
+      "import": {
+        "types": "./utilities/visually-hidden/index.d.ts",
+        "default": "./utilities/visually-hidden/index.js"
+      },
+      "require": {
+        "types": "./utilities/visually-hidden/index.d.ts",
+        "default": "./utilities/visually-hidden/index.cjs"
+      }
+    }
+  }
+}

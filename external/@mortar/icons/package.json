@@ -1,0 +1,29 @@
+{
+  "name": "@mortar/icons",
+  "version": "17.0.4",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "typings": "./index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/heb-engineering/teams/enterprise/sco/mortar/mortar"
+  },
+  "publishConfig": {
+    "registry": "https://hebdigital.jfrog.io/hebdigital/api/npm/npm/"
+  },
+  "dependencies": {},
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.cjs"
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "name": "@mortar/styles",
+  "version": "17.0.4",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "typings": "./index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/heb-engineering/teams/enterprise/sco/mortar/mortar"
+  },
+  "publishConfig": {
+    "registry": "https://hebdigital.jfrog.io/hebdigital/api/npm/npm/"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.cjs"
+      }
+    },
+    "./mortar-angular.css": {
+      "import": "./mortar-angular.css",
+      "require": "./mortar-angular.css"
+    },
+    "./mortar-angular": {
+      "import": "./mortar-angular.css",
+      "require": "./mortar-angular.css"
+    },
+    "./mortar-core-cx.css": {
+      "import": "./mortar-core-cx.css",
+      "require": "./mortar-core-cx.css"
+    },
+    "./mortar-core-cx": {
+      "import": "./mortar-core-cx.css",
+      "require": "./mortar-core-cx.css"
+    },
+    "./mortar-core-px.css": {
+      "import": "./mortar-core-px.css",
+      "require": "./mortar-core-px.css"
+    },
+    "./mortar-core-px": {
+      "import": "./mortar-core-px.css",
+      "require": "./mortar-core-px.css"
+    },
+    "./mortar-core-rx.css": {
+      "import": "./mortar-core-rx.css",
+      "require": "./mortar-core-rx.css"
+    },
+    "./mortar-core-rx": {
+      "import": "./mortar-core-rx.css",
+      "require": "./mortar-core-rx.css"
+    },
+    "./mortar-core.css": {
+      "import": "./mortar-core.css",
+      "require": "./mortar-core.css"
+    },
+    "./mortar-core": {
+      "import": "./mortar-core.css",
+      "require": "./mortar-core.css"
+    },
+    "./mortar-fonts.css": {
+      "import": "./mortar-fonts.css",
+      "require": "./mortar-fonts.css"
+    },
+    "./mortar-fonts": {
+      "import": "./mortar-fonts.css",
+      "require": "./mortar-fonts.css"
+    },
+    "./mortar-grid.css": {
+      "import": "./mortar-grid.css",
+      "require": "./mortar-grid.css"
+    },
+    "./mortar-grid": {
+      "import": "./mortar-grid.css",
+      "require": "./mortar-grid.css"
+    },
+    "./mortar-react.css": {
+      "import": "./mortar-react.css",
+      "require": "./mortar-react.css"
+    },
+    "./mortar-react": {
+      "import": "./mortar-react.css",
+      "require": "./mortar-react.css"
+    },
+    "./mortar-reset.css": {
+      "import": "./mortar-reset.css",
+      "require": "./mortar-reset.css"
+    },
+    "./mortar-reset": {
+      "import": "./mortar-reset.css",
+      "require": "./mortar-reset.css"
+    },
+    "./mortar-theme-utilities.scss": {
+      "import": "./mortar-theme-utilities.scss",
+      "require": "./mortar-theme-utilities.scss"
+    },
+    "./mortar-theme-utilities": {
+      "import": "./mortar-theme-utilities.scss",
+      "require": "./mortar-theme-utilities.scss"
+    },
+    "./mortar-utilities-and-grid.css": {
+      "import": "./mortar-utilities-and-grid.css",
+      "require": "./mortar-utilities-and-grid.css"
+    },
+    "./mortar-utilities-and-grid": {
+      "import": "./mortar-utilities-and-grid.css",
+      "require": "./mortar-utilities-and-grid.css"
+    },
+    "./mortar-utilities.css": {
+      "import": "./mortar-utilities.css",
+      "require": "./mortar-utilities.css"
+    },
+    "./mortar-utilities": {
+      "import": "./mortar-utilities.css",
+      "require": "./mortar-utilities.css"
+    }
+  }
+}

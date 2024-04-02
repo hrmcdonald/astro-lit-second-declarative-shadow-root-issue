@@ -1,0 +1,60 @@
+---
+import {
+  MteNavButton,
+  MteNavButtonGroup,
+  MteNavIconButton,
+  MteNavItem,
+  MteNavItemGroup,
+} from '@mortar/elements/atomic/nav';
+import { MteButton, MteIconButton } from '@mortar/elements/atomic/button';
+import { MteLink } from '@mortar/elements/atomic/link';
+import { MteMediaQuery } from '@mortar/elements/utilities/media-query';
+import { MteIcon } from '@mortar/elements/atomic/icon';
+import { MteHeader } from '@mortar/elements/atomic/composition';
+import { MteOverlayTrigger } from '@mortar/elements/utilities/overlay-trigger';
+import { MteCollapse } from '@mortar/elements/atomic/collapse';
+import { MteBadge } from '@mortar/elements/atomic/badge';
+import { MteMenu, MteMenuItem } from '@mortar/elements/atomic/menu';
+import { MteCardButton } from '@mortar/elements/atomic/card';
+import { MteBox } from '@mortar/elements/atomic/box';
+import { MteStack } from '@mortar/elements/atomic/stack';
+
+const items = new Array(150).fill(0);
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		{/*
+			Looping through some arbitrarily large amount of components rendered to 
+			the page so this triggers reliably on a slower/throttled connection.
+		*/}
+		{items.map(() => <>
+			<MteBox client:load />
+			<MteStack client:load />
+			<MteCollapse client:load />
+			<MteNavItem client:load />
+			<MteNavItemGroup client:load />
+			<MteIcon client:load />
+			<MteNavButtonGroup client:load />
+			<MteNavButton client:load />
+			<MteNavIconButton client:load />
+			<MteButton client:load />
+			<MteMediaQuery client:load />
+			<MteOverlayTrigger client:load />
+			<MteIconButton client:load />
+			<MteLink client:load />
+			<MteCardButton client:load />
+			<MteMenu client:load />
+			<MteMenuItem client:load />
+			<MteHeader client:load />
+			<MteBadge client:load />
+		</>)}
+	</body>
+</html>

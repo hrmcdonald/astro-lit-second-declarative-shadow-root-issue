@@ -1,0 +1,42 @@
+import {
+  MteContentBase,
+  ResponsiveValueConverter,
+  WaitForFrameworkMixin,
+  __decorateClass,
+  defineElement,
+  styles7 as styles
+} from "../../chunks/chunk.Y4EV6E5D.js";
+
+// src/atomic/stack/stack.element.ts
+import { html } from "lit";
+import { property } from "lit/decorators.js";
+
+// src/atomic/stack/stack.styles.ts
+import { css } from "lit";
+var styles2 = css`:host{display:flex}:host([direction=columnReverse]),:host([direction=column]){align-items:stretch;flex-direction:column}:host([direction=rowReverse]),:host([direction=row]){align-items:center;flex-direction:row}:host([row]){align-items:center;flex-direction:row!important}`;
+
+// src/atomic/stack/stack.element.ts
+var MteStack = class extends WaitForFrameworkMixin(MteContentBase) {
+  constructor() {
+    super(...arguments);
+    this.direction = "column";
+    this.row = false;
+  }
+  render() {
+    return html`${this.instanceStyles}<slot></slot>`;
+  }
+};
+MteStack.styles = [styles, styles2];
+__decorateClass([
+  property({ reflect: true, converter: ResponsiveValueConverter })
+], MteStack.prototype, "direction", 2);
+__decorateClass([
+  property({ type: Boolean, reflect: true })
+], MteStack.prototype, "row", 2);
+MteStack = __decorateClass([
+  defineElement("mte-stack")
+], MteStack);
+export {
+  MteStack
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsiLi4vLi4vLi4vLi4vc3JjL2F0b21pYy9zdGFjay9zdGFjay5lbGVtZW50LnRzIiwgIi4uLy4uLy4uLy4uL3NyYy9hdG9taWMvc3RhY2svc3RhY2suc3R5bGVzLnRzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyJpbXBvcnQgeyBodG1sIH0gZnJvbSAnbGl0JztcbmltcG9ydCB7IHByb3BlcnR5IH0gZnJvbSAnbGl0L2RlY29yYXRvcnMuanMnO1xuaW1wb3J0IHtcbiAgYmFzZVN0eWxlcyxcbiAgZGVmaW5lRWxlbWVudCxcbiAgTXRlQ29udGVudEJhc2UsXG4gIFJlc3BvbnNpdmVWYWx1ZSxcbiAgUmVzcG9uc2l2ZVZhbHVlQ29udmVydGVyLFxuICBXYWl0Rm9yRnJhbWV3b3JrTWl4aW4sXG59IGZyb20gJy4uLy4uL2NvcmUnO1xuaW1wb3J0IHsgc3R5bGVzIH0gZnJvbSAnLi9zdGFjay5zdHlsZXMnO1xuXG4vKipcbiAqIEBzbG90IC0gRGVmYXVsdCBzbG90dGVkIGNvbnRlbnRcbiAqL1xuQGRlZmluZUVsZW1lbnQoJ210ZS1zdGFjaycpXG5leHBvcnQgY2xhc3MgTXRlU3RhY2sgZXh0ZW5kcyBXYWl0Rm9yRnJhbWV3b3JrTWl4aW4oTXRlQ29udGVudEJhc2UpIHtcbiAgc3RhdGljIHN0eWxlcyA9IFtiYXNlU3R5bGVzLCBzdHlsZXNdO1xuXG4gIC8qKiBTZXRzIHRoZSBgZmxleC1kaXJlY3Rpb25gIGFuZCBgYWxpZ24taXRlbXNgIGNzcyBwcm9wZXJ0aWVzIG9uIHRoaXMgZWxlbWVudC4gRGVmYXVsdHMgdG8gY29sdW1uICovXG4gIEBwcm9wZXJ0eSh7IHJlZmxlY3Q6IHRydWUsIGNvbnZlcnRlcjogUmVzcG9uc2l2ZVZhbHVlQ29udmVydGVyIH0pIGRpcmVjdGlvbjogUmVzcG9uc2l2ZVZhbHVlPFxuICAgIHVuZGVmaW5lZCB8ICdyb3cnIHwgJ3Jvd1JldmVyc2UnIHwgJ2NvbHVtbicgfCAnY29sdW1uUmV2ZXJzZScgfCAnaW5pdGlhbCcgfCAnaW5oZXJpdCdcbiAgPiA9ICdjb2x1bW4nO1xuXG4gIC8qKiBTaG9ydGhhbmQgZm9yIGVhc2lseSBzZXR0aW5nIGBkaXJlY3Rpb249XCJyb3dcImAgKi9cbiAgQHByb3BlcnR5KHsgdHlwZTogQm9vbGVhbiwgcmVmbGVjdDogdHJ1ZSB9KSByb3cgPSBmYWxzZTtcblxuICByZW5kZXIoKSB7XG4gICAgcmV0dXJuIGh0bWxgJHt0aGlzLmluc3RhbmNlU3R5bGVzfTxzbG90Pjwvc2xvdD5gO1xuICB9XG59XG5cbmRlY2xhcmUgZ2xvYmFsIHtcbiAgaW50ZXJmYWNlIEhUTUxFbGVtZW50VGFnTmFtZU1hcCB7XG4gICAgJ210ZS1zdGFjayc6IE10ZVN0YWNrO1xuICB9XG59XG4iLCAiaW1wb3J0IHsgY3NzIH0gZnJvbSAnbGl0JztleHBvcnQgY29uc3Qgc3R5bGVzID0gY3NzYDpob3N0e2Rpc3BsYXk6ZmxleH06aG9zdChbZGlyZWN0aW9uPWNvbHVtblJldmVyc2VdKSw6aG9zdChbZGlyZWN0aW9uPWNvbHVtbl0pe2FsaWduLWl0ZW1zOnN0cmV0Y2g7ZmxleC1kaXJlY3Rpb246Y29sdW1ufTpob3N0KFtkaXJlY3Rpb249cm93UmV2ZXJzZV0pLDpob3N0KFtkaXJlY3Rpb249cm93XSl7YWxpZ24taXRlbXM6Y2VudGVyO2ZsZXgtZGlyZWN0aW9uOnJvd306aG9zdChbcm93XSl7YWxpZ24taXRlbXM6Y2VudGVyO2ZsZXgtZGlyZWN0aW9uOnJvdyFpbXBvcnRhbnR9YDsiXSwKICAibWFwcGluZ3MiOiAiOzs7Ozs7Ozs7O0FBQUEsU0FBUyxZQUFZO0FBQ3JCLFNBQVMsZ0JBQWdCOzs7QUNEekIsU0FBUyxXQUFXO0FBQWEsSUFBTUEsVUFBUzs7O0FEZ0J6QyxJQUFNLFdBQU4sY0FBdUIsc0JBQXNCLGNBQWMsRUFBRTtBQUFBLEVBQTdEO0FBQUE7QUFJNkQscUJBRTlEO0FBR3dDLGVBQU07QUFBQTtBQUFBLEVBRWxELFNBQVM7QUFDUCxXQUFPLE9BQU8sS0FBSyxjQUFjO0FBQUEsRUFDbkM7QUFDRjtBQWRhLFNBQ0osU0FBUyxDQUFDLFFBQVlDLE9BQU07QUFHK0I7QUFBQSxFQUFqRSxTQUFTLEVBQUUsU0FBUyxNQUFNLFdBQVcseUJBQXlCLENBQUM7QUFBQSxHQUpyRCxTQUl1RDtBQUt0QjtBQUFBLEVBQTNDLFNBQVMsRUFBRSxNQUFNLFNBQVMsU0FBUyxLQUFLLENBQUM7QUFBQSxHQVQvQixTQVNpQztBQVRqQyxXQUFOO0FBQUEsRUFETixjQUFjLFdBQVc7QUFBQSxHQUNiOyIsCiAgIm5hbWVzIjogWyJzdHlsZXMiLCAic3R5bGVzIl0KfQo=
